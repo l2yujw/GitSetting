@@ -1,3 +1,78 @@
+<!-- Heading -->
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+Paragraph
+
+<!-- Line -->
+___
+
+<!-- Text attributes -->
+This is the **bold** text and this is the *italic* text and let's do ~~strikethrough~~.
+
+<!-- Quote -->
+> Don't forget to code your dream 
+
+<!-- Bullet list -->
+Fruits:
+🍎
+🍋
+
+Other fruits:
+🍑
+🍏
+
+<!-- Numbered list -->
+Numbers:
+1. first
+2. second
+3. third
+
+<!-- Link -->
+Click [Here]()
+
+<!-- Image -->
+![image description](https://user-images.githubusercontent.com/61736137/102153953-b2881000-3ebb-11eb-9581-7026bc8e169e.jpg)
+
+
+<!-- Table -->
+|Header|Description|
+|:--:|:--:|
+|Cell1|Cell2|
+|Cell3|Cell4|
+|Cell5|Cell6|
+
+<!-- Code -->
+To print message in the console, use `console.log('your message')` and ..
+
+```ts
+console.log('hello')
+```
+
+<!-- PR Description Example -->
+# What is Lorem Ipsum?
+`Lorem Ipsum` is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy **text ever since the 1500s**, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+```ts
+console.log('Hello World!');
+```
+
+|Feature|Description|
+|--|--|
+|Feature1|<img src="https://user-images.githubusercontent.com/61736137/102153953-b2881000-3ebb-11eb-9581-7026bc8e169e.jpg" width="400"><br>Feature1. Responsive Web Page|
+|Feature2|<img src="https://user-images.githubusercontent.com/61736137/102153956-b451d380-3ebb-11eb-9ab7-f8bad6c05a97.png" width="400"><br>Feature2. Responsive Web Page|
+
+## Before release
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+## screenshot
+Issues -> Write에 이미지 붙이기 -> 복사
+
 # GitSetting
 
 Github CRLF 문제 해결 방법
@@ -8,27 +83,34 @@ Windows 에서는 line ending으로 CR(Carriage-Return, \r) 및 LF(Line Feed, \n
 2. git root폴더(.git폴더 있는 곳)에 .gitattributes파일 생성
 아래 코드 입력 후 저장
 
-# Auto detect text files and perform LF normalization
-*        text=auto
 
-*.cs     text diff=csharp
-*.java   text diff=java
-*.html   text diff=html
-*.css    text
-*.js     text
-*.sql    text
+`.gitattributes파일
 
-*.csproj text merge=union
-*.sln    text merge=union eol=crlf
+    # Auto detect text files and perform LF normalization
+    *        text=auto
 
-*.docx   diff=astextplain
-*.DOCX   diff=astextplain
+    *.cs     text diff=csharp
+    *.java   text diff=java
+    *.html   text diff=html
+    *.css    text
+    *.js     text
+    *.sql    text
 
-# absolute paths are ok, as are globs
-/**/postinst* text eol-lf
+    *.csproj text merge=union
+    *.sln    text merge=union eol=crlf
 
-# paths that don't start with / are treated relative to the .gitattributes folder
-relative/path/*.txt text eol-lf
+    *.docx   diff=astextplain
+    *.DOCX   diff=astextplain
+
+    # absolute paths are ok, as are globs
+    /**/postinst* text eol-lf
+
+    # paths that don't start with / are treated relative to the .gitattributes folder
+    relative/path/*.txt text eol-lf
+`
+
+
+
 
 git config --global user.name ryu
 git config --global user.email jeungwon28@gmail.com
