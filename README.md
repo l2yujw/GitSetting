@@ -81,6 +81,20 @@ git reset cd344a0a67c41aec49814d5b0e248d8337596aa7 --hard -> commit 삭제 </br>
 git은 파일의 내용이 같으면 index에서는 파일명이 달라도 같게 설정됌  </br>
 objects 파일 안에 commit 안에 들어감 (객체라는뜻) </br>
 
+
+## 팀 프로젝트 복사
+git clone --mirror [원본 저장소 경로] <또는 이름> 
+그 다음
+
+cd [원본 저장소 이름].git
+클론받아온 파일로 cd 해서 들어가준다 .git 꼭해야함
+
+그다음
+git remote set-url --push origin [이동할 원격 저장소]
+이렇게 해준다음.
+
+git push --mirror
+해주면 끝!
 git branch ->현재 branch 확인 </br>
 git checkout branch명 -> 해당 branch로 이동 </br>
 git branch -d exp -> 작업이 끝난 해당 브랜치 삭제 </br>
